@@ -1,0 +1,474 @@
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+hr {
+  width: 70%;
+}
+
+p {
+  font-size: 18px;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: .8125rem;
+  font-weight: 600;
+  box-shadow: 0 0.3125rem 0.9375rem 0 rgb(0 0 0 / 7%);
+  background-color: rgba(121, 0, 0);
+  z-index: 10;
+}
+
+.logo-header {
+  border-radius: 50px;
+  max-width: 50px;
+}
+
+nav {
+  color: #ffffff;
+}
+
+header img {
+  max-width: 100px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #ffffff;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  transition: all .3s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  transition: all .3s ease-in-out;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
+.navbar-nav {
+  column-gap: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px;
+    width: fit-content;
+  }
+}
+
+.images-header {
+  max-width: 100vw;
+  height: 35vh;
+  background-image: url(./assets/images/bg-top.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  max-width: 30px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  width: 10px;
+}
+
+#home {
+  padding: 50px 0;
+}
+
+.caption {
+  position: absolute;
+  bottom: -65px;
+  background-color: #ebebeb;
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.home-card:hover .caption {
+  transition: all .3s ease-in-out;
+  bottom: 0;
+}
+
+.home-card {
+  position: relative;
+  border-radius: 10px;
+  width: fit-content;
+  overflow: hidden;
+}
+
+.home-card img {
+  border-radius: 10px;
+}
+
+.home-btn {
+  background-color: rgba(121, 0, 0);
+  border: 1px solid transparent;
+  width: fit-content;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.home-btn:hover {
+  color: rgba(121, 0, 0);
+  background-color: #ffffff;
+  border-color: rgba(121, 0, 0);
+}
+
+.section-title {
+  margin-top: 50px;
+}
+
+#history {
+  padding: 50px 0;
+}
+
+.carousel-item>.row {
+  padding-left: 16%;
+  padding-right: 16%;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+figcaption {
+  font-weight: bold;
+}
+
+#history>.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
+
+#history img {
+  border-radius: 10px;
+}
+
+.storia {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.img-hovered:hover {
+  transition: all .3s linear;
+  transform: scale(1.2);
+}
+
+#testimonials {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  background-color: #ebebeb;
+  min-height: 341px
+}
+
+#testimonials .carousel-item {
+  height: 35vh;
+}
+
+#testimonials figure {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#scenario {
+  padding: 50px 0;
+}
+
+#scenario img {
+  border-radius: 10px;
+}
+
+footer {
+  max-width: 100vw;
+  background-color: rgba(121, 0, 0);
+  color: #ffffff;
+  padding: 25px 0;
+}
+
+@media screen and (min-width: 992px) {
+  .credits {
+    text-align: end;
+  }
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#ristorante,
+#pizza,
+#pasticceria,
+#contatti,
+#news {
+  padding: 50px 0;
+}
+
+#ristorante img,
+#pizza img {
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width:992px) {
+
+  #ristorante img,
+  #pizza img {
+    max-width: 100%;
+    width: 250px;
+  }
+}
+
+#ristorante button,
+#pizza button {
+  background-color: #ffffff;
+  border: none;
+}
+
+
+.modal.fade .modal-dialog {
+  max-width: 60vw;
+  width: fit-content;
+}
+
+@media screen and (max-width: 575px) {
+  .modal.fade .modal-dialog {
+    max-width: 100vw;
+    width: fit-content;
+  }
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-body img {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.overlay {
+  height: 70vh;
+  overflow-y: hidden;
+  color: #ffffff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(./assets//images//interno-ristorante-galleria.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.overlay2 {
+  height: 70vh;
+  overflow-y: hidden;
+  color: #ffffff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(./assets//images//ristorante-galleria-pizzeria.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.overlay4 {
+  height: 70vh;
+  overflow-y: hidden;
+  color: #ffffff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(./assets//images//overlay-home.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: rgba(121, 0, 0);
+  border-bottom: 2px solid rgba(121, 0, 0);
+}
+
+.video {
+  width: 100%;
+  height: 80vh;
+  border-radius: 10px;
+}
+
+#pasticceria ul {
+  width: fit-content;
+}
+
+#pasticceria img {
+  max-width: 350px;
+}
+
+#pasticceria .carousel {
+  width: 50%;
+}
+
+.pasticceria-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  #pasticceria .carousel {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #pasticceria .carousel {
+    width: 100%;
+  }
+
+  #pasticceria .carousel-control-next-icon,
+  #pasticceria .carousel-control-prev-icon {
+    background-color: black;
+    border-radius: 50px;
+  }
+
+  #pasticceria img {
+    max-width: 100%;
+  }
+}
+
+#pasticceria .carousel-item img {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#pasticceria .carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #ffffff;
+}
+
+.overlay3 {
+  height: 80vh;
+  overflow-y: hidden;
+  color: #ffffff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(./assets/images/pasticceria-13.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.contatti-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+#map {
+  border-radius: 10px;
+}
+
+.card {
+  margin: 0;
+}
+
+.card-news a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.card-news .btn {
+  background-color: rgba(121, 0, 0);
+  border: 1px solid transparent;
+  width: fit-content;
+}
+
+.card-news .btn:hover {
+  transition: all .3s ease-in-out;
+  background-color: #ffffff;
+  border: 1px solid rgba(121, 0, 0);
+  color: rgba(121, 0, 0);
+}
+
+.card-news:hover {
+  transition: all .3s ease-in-out;
+  transform: scale(1.04);
+  box-shadow: 0 0.3125rem 0.9375rem 0 rgb(0 0 0 / 7%);
+}
+
+.news-1,
+.news-2 {
+  padding: 10px;
+}
+
+.card-news {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  border: 2px solid #ebebeb;
+  border-radius: 10px;
+  height: fit-content;
+  overflow-y: hidden;
+  padding: 15px;
+}
+
+.card-image {
+  width: 30%;
+}
+
+.card-testo {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 425px) {
+  .card-news {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-image,
+  .card-testo {
+    width: 100%;
+  }
+
+  .card-testo {
+    text-align: center;
+  }
+
+  .card-news .btn {
+    margin: auto;
+  }
+}
